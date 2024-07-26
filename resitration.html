@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Registration Form</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f3f3f3;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 120vh;
+            }
+ 
+            .main {         
+                border-radius: 15px;
+                box-shadow: 0 0 20px
+                    rgba(0, 0, 0, 0.2);
+                padding: 20px;
+                width: 300px;
+            }
+ 
+            .main h2 {
+                color: #4caf50;
+                margin-bottom: 20px;
+            }
+ 
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #0a0a0a;
+                font-weight: bold;
+            }
+ 
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+         
+           
+            select {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+ 
+            button[type="submit"] {
+                padding: 15px;
+                border-radius: 10px;
+                border: none;
+                background-color: #717e71;
+                color: white;
+                cursor: pointer;
+                width: 100%;
+                font-size: 12px;
+            }
+        </style>
+    </head>
+ 
+    <body>
+        <style>
+        
+            body {
+              background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIIJqhqEttjM77DyBKsJqDTgHkgsSSNBCr4Q&s');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+             
+            }
+        </style> 
+        <div class="main">
+            <h1>Registration Form</h1>
+            <form action="">
+                <label for="first">First Name:</label>
+                <input
+                    type="text"
+                    id="first"
+                    name="first"
+                    required
+                />
+ 
+                <label for="last"
+                    >Last Name:</label
+                >
+                <input
+                    type="text"
+                    id="last"
+                    name="last"
+                    required
+                />
+ 
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                />
+ 
+                <label for="password"
+                    >Password:</label
+                >
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$"
+                    title="Password must contain at least one number, 
+                           one alphabet, one symbol, and be at 
+                           least 8 characters long"
+                    required
+                />
+ 
+                <label for="repassword"
+                    >Re-type Password:</label
+                >
+                <input
+                    type="password"
+                    id="repassword"
+                    name="repassword"
+                    required
+                />
+                
+ 
+                <label for="mobile"
+                    >Contact:</label>
+                <input
+                    type="text"
+                    id="mobile"
+                    name="mobile"
+                    maxlength="10"
+                    required/>
+                    <div>
+
+                    <label for="gender">Gender:
+                        <input type="radio" value="Male" name="gender" checked > Male   
+                        <input type="radio" value="Female" name="gender"> Female   
+                        <input type="radio" value="Other" name="gender"> Other  
+                      </label>    
+                    </div>               
+                    <label for="city">Choose a current city :
+                    <select name="city" id="city">
+                        <option value="pune">Pune</option>
+                        <option value="nagpur">Nagpur</option>
+                        <option value="chh.sambhajinagar">Chh.Sambhajinagar</option>
+                        <option value="nashik">Nashik</option>
+                      </select></label>
+                      <label for="area">area:      </label>
+                        <input type="checkbox" checked="checked"> east
+                        <span class="checkmark"></span>
+                        <input type="checkbox" checked="checked"> west   
+                        <span class="checkmark"></span>                    
+                        <input type="checkbox" checked="checked"> north
+                        <span class="checkmark"></span>
+                        <input type="checkbox" checked="checked"> south
+                        <span class="checkmark"></span>
+ 
+                <button type="submit">
+                    <a href="file:///C:/Users/js/Downloads/thank.html"> Submit</a>
+                    
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
